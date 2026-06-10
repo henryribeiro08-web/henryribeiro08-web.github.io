@@ -97,8 +97,10 @@
             color: #135997;
             transition: color 0.3s ease;
         }
-        
-        
+        .table-responsive{
+            overflow-x: auto;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -112,24 +114,25 @@
             <p><strong>Endereço de residência</strong>:  RUA CRISTALINA, 312, ULTIMA CASA DA RUA - NOVA CARAPINA II, SERRA, ES, CEP 29170-212</p>
         </main>
         <h3>Boletim Escolar</h3>
-        <table>
-            <tr>
-                <th>Escola</th>
-                <th>Turma</th>
-                <th>Ano de Escolaridade</th>
-                <th>Ano Escolar</th>
-            </tr>
-            <tr>
-                <td>EEEFM NOVA CARAPINA</td>
-                <td>3ºM01-EM-ESP</td>
-                <td>Ensino médio - 3ª Série - 3ª SERIE</td>
-                <td>2026</td>
-            </tr>
-        </table>
+        <div class="table-responsive">
+            <table>
+                <tr>
+                    <th>Escola</th>
+                    <th>Turma</th>
+                    <th>Ano de Escolaridade</th>
+                    <th>Ano Escolar</th>
+                </tr>
+                <tr>
+                    <td>EEEFM NOVA CARAPINA</td>
+                    <td>3ºM01-EM-ESP</td>
+                    <td>Ensino médio - 3ª Série - 3ª SERIE</td>
+                    <td>2026</td>
+                </tr>
+            </table>
+        </div>
         
         <nav>
             <p><a href="Boletim.html">🔍 Visualizar Boletim</a></p>
         </nav>
-    
 </body>
 </html>
