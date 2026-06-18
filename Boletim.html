@@ -19,7 +19,6 @@
             font-family: 'Poppins', sans-serif;
             text-align: center;
             text-shadow: 2px 2px 4px #072c92ea;
-            width:100%;
             padding:20px; 
             background:linear-gradient(90deg,#60a5fa,#a5f3fc);
         }
@@ -46,6 +45,8 @@
             border-collapse:collapse;
             margin-bottom: 30px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            align-items: center;
+            margin: auto;
         }
         th{
             font-family: Arial, Helvetica, sans-serif;
@@ -74,6 +75,10 @@
         tr:hover {
             background: #f5f9ff;
         }
+        #responsivo{
+            overflow-y: auto;
+        }
+        
     </style>
 </head>
 <body>
@@ -88,64 +93,66 @@
     </div>   
     </div>   
     <h3 style="color: #2563eb; font-size: 24px;">📚 Matérias e notas</h3>
-    <table>
-        <tr>
-            <th>Matérias</th>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
-            <th>Nota 3</th>
-            <th>Faltas</th>
-            <th>Nota Total </th>
-        </tr>
-        <tr>
-            <td>Matemática</td>
-            <td>9</td>
-            <td>8</td>
-            <td>7</td>
-            <td>12</td>
-            <td style="color: green">24</td>
-        </tr>
-        <tr>
-            <td>Português</td>
-            <td>8</td>
-            <td>5</td>
-            <td>6</td>
-            <td>8</td>
-            <td style="color: green">19</td>
-        </tr>
-        <tr>
-            <td>Biologia</td>
-            <td>8</td>
-            <td>5</td>
-            <td>5</td>
-            <td>9</td>
-            <td style="color: green">18</td>
-        </tr>
+    <div id="responsivo">
+        <table>
             <tr>
-                <td>História</td>
+                <th>Matérias</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Faltas</th>
+                <th>Nota Total </th>
+            </tr>
+            <tr>
+                <td>Matemática</td>
+                <td>9</td>
+                <td>8</td>
+                <td>7</td>
+                <td>12</td>
+                <td style="color: green">24</td>
+            </tr>
+            <tr>
+                <td>Português</td>
                 <td>8</td>
                 <td>5</td>
                 <td>6</td>
-                <td>15</td>
+                <td>8</td>
                 <td style="color: green">19</td>
             </tr>
             <tr>
-                <td>Geografia</td>
-                <td>8</td> 
+                <td>Biologia</td>
+                <td>8</td>
                 <td>5</td>
                 <td>5</td>
-                <td>10</td>
+                <td>9</td>
                 <td style="color: green">18</td>
             </tr>
-            <tr>
-                <td>Inglês</td>
-                <td>6</td>
-                <td>7</td>
-                <td>6</td>
-                <td>18</td>
-                <td style="color: green">19</td>
-            </tr>
-    </table>
+                <tr>
+                    <td>História</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td style="color: green">19</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td style="color: green">18</td>
+                </tr>
+                <tr>
+                    <td>Inglês</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>18</td>
+                    <td style="color: green">19</td>
+                </tr>
+        </table>
+    </div>
     <h3 style="color: #2563eb;">Detalhes de Faltas</h3>
     <table>
         <tr> 
